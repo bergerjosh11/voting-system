@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decentralized Voting System</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Decentralized Voting System</h1>
+    <div>
+        <h2>Create Poll</h2>
+        <form id="createPollForm">
+            <input type="text" id="question" placeholder="Poll Question" required>
+            <input type="text" id="options" placeholder="Poll Options (comma-separated)" required>
+            <button type="submit">Create Poll</button>
+        </form>
+    </div>
+    <div>
+        <h2>Vote</h2>
+        <form id="voteForm">
+            <input type="number" id="pollId" placeholder="Poll ID" required>
+            <input type="number" id="optionId" placeholder="Option ID" required>
+            <button type="submit">Vote</button>
+        </form>
+    </div>
+    <div>
+        <h2>Poll Results</h2>
+        <form id="resultsForm">
+            <input type="number" id="resultsPollId" placeholder="Poll ID" required>
+            <button type="submit">Get Results</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
