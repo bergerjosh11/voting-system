@@ -1,0 +1,16 @@
+{
+  "name": "voting-system",
+  "version": "1.0.0",
+  "description": "A decentralized voting system using Solidity",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "web3": "^1.5.2",
+    "truffle": "^5.4.29",
+    "ganache-cli": "^6.12.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
